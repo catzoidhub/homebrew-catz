@@ -23,8 +23,8 @@ brew install mcatzp
 | [`devcatz`](https://catzoid.com/devcatz) | *Finally, someone herds the cats.* A local development environment: every site on its own `https://*.localhost`, with every runtime, database, mail, search, tunnel and Docker in one app. |
 | [`dbcatz`](https://catzoid.com/dbcatz) | *Curiosity won't kill this cat.* One window for MySQL, MariaDB, PostgreSQL, SQLite, Redis, Valkey, MongoDB and Elasticsearch. |
 | [`dialcatz`](https://catzoid.com/dialcatz) | *Dial an endpoint. Hear it purr.* An API client for REST, GraphQL and WebSocket, with a self-hosted team server. |
-| `docatz` | A light container engine for your Mac. *Still a kitten — coming soon.* |
-| `mcatzp` (formula) | *The MCP with the cats inside.* One MCP server for your AI assistant to reach every cat. *Coming soon.* Install with `brew install catzoidhub/catz/mcatzp` (no `--cask`). |
+| [`docatz`](https://catzoid.com/docatz) | A light container engine for your Mac. *Still a kitten — coming soon.* |
+| [`mcatzp`](https://catzoid.com/mcatzp) (formula) | *The MCP with the cats inside.* One MCP server for your AI assistant to reach every cat. *Coming soon.* Install with `brew install catzoidhub/catz/mcatzp` (no `--cask`). |
 
 Every cat is notarized by Apple, runs on macOS 13 or later (Apple silicon and Intel), and **updates itself** — Homebrew
 only puts it in place the first time. All cats, no catch: free and open source, no account.

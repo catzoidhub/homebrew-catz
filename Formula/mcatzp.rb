@@ -3,7 +3,7 @@ class Mcatzp < Formula
   # server, so a formula (not a cask). Drafted for the TypeScript / npm route (MCatzP TODO #1); if MCatzP becomes a Go
   # binary instead, switch to the release tarballs on catzoidhub/MCatzP (`depends_on "go" => :build`, `go build`).
   desc "MCP server that lets AI assistants use the Catzoid apps"
-  homepage "https://catzoid.com/roadmap"
+  homepage "https://catzoid.com/mcatzp"
   # filled in by scripts/bump.sh from the npm registry
   url "https://registry.npmjs.org/mcatzp/-/mcatzp-0.1.0.tgz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
