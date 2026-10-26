@@ -9,8 +9,7 @@ cask "docatz" do
   sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
          intel: "0000000000000000000000000000000000000000000000000000000000000000"
 
-  url "https://github.com/catzoidhub/DoCatz/releases/download/v#{version}/DoCatz-#{version}-#{arch}.dmg",
-      verified: "github.com/catzoidhub/DoCatz/"
+  url "https://github.com/catzoidhub/DoCatz/releases/download/v#{version}/DoCatz-#{version}-#{arch}.dmg"
   name "DoCatz"
   desc "Light container engine and desktop with a Linux VM"
   homepage "https://catzoid.com/docatz"

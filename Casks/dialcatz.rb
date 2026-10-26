@@ -6,8 +6,7 @@ cask "dialcatz" do
   sha256 arm:   "181eb4c683a5989b7363d610e402ec77fb7b94cd07341f5ab1e531ccec6de353",
          intel: "a586ef690e9ccef9ef752c246b8ef17dd2e411534191ea8848e54ac8633d98db"
 
-  url "https://github.com/catzoidhub/DialCatz/releases/download/v#{version}/DialCatz-#{version}-#{arch}.dmg",
-      verified: "github.com/catzoidhub/DialCatz/"
+  url "https://github.com/catzoidhub/DialCatz/releases/download/v#{version}/DialCatz-#{version}-#{arch}.dmg"
   name "DialCatz"
   desc "API client for REST, GraphQL and WebSocket requests"
   homepage "https://catzoid.com/dialcatz"

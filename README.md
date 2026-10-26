@@ -1,21 +1,23 @@
 # homebrew-catz
 
-The litter's Homebrew tap. One `brew install` and a cat comes home.
+The litter's Homebrew tap. One line and a cat comes home.
+
+Homebrew asks you to trust a tap that is not its own before it loads anything from it — so the first time it is tap,
+trust, install:
 
 ```bash
-brew install --cask catzoidhub/catz/devcatz
-brew install --cask catzoidhub/catz/dbcatz
-brew install --cask catzoidhub/catz/dialcatz
-brew install --cask catzoidhub/catz/docatz    # coming soon
-brew install catzoidhub/catz/mcatzp           # coming soon — a formula, so no --cask
+brew tap catzoidhub/catz && brew trust catzoidhub/catz
+brew install --cask devcatz dbcatz dialcatz
 ```
 
-Or tap once and use the short names:
+After that, any cat by its short name:
 
 ```bash
-brew tap catzoidhub/catz
-brew install --cask devcatz dbcatz dialcatz docatz
-brew install mcatzp
+brew install --cask devcatz
+brew install --cask dbcatz
+brew install --cask dialcatz
+brew install --cask docatz      # coming soon
+brew install mcatzp             # coming soon — a formula, so no --cask
 ```
 
 | Name | What it is |

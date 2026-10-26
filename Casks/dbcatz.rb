@@ -6,8 +6,7 @@ cask "dbcatz" do
   sha256 arm:   "e821e4827e67909e164eae3aa1db69bfadaf4039e2b27327054a7c202990528d",
          intel: "e576dec9262d6c74e0288b7098711d266cbcef9ebdca791bf05afec8d1f6ca4a"
 
-  url "https://github.com/catzoidhub/DBCatz/releases/download/v#{version}/DBCatz-#{version}-#{arch}.dmg",
-      verified: "github.com/catzoidhub/DBCatz/"
+  url "https://github.com/catzoidhub/DBCatz/releases/download/v#{version}/DBCatz-#{version}-#{arch}.dmg"
   name "DBCatz"
   desc "Database client for MySQL, PostgreSQL, Redis, MongoDB and more"
   homepage "https://catzoid.com/dbcatz"

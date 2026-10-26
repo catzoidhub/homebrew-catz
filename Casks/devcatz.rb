@@ -6,8 +6,7 @@ cask "devcatz" do
   sha256 arm:   "c1b71605fa1271dbbd5f2a06c3936301714b66cc12e1b520c35d47e57ea943bd",
          intel: "463a7d0b0393262071cfa4737ea0d2219141f7dd83fc6f9bd215531fa1c83522"
 
-  url "https://github.com/catzoidhub/DevCatz/releases/download/v#{version}/DevCatz-#{version}-#{arch}.dmg",
-      verified: "github.com/catzoidhub/DevCatz/"
+  url "https://github.com/catzoidhub/DevCatz/releases/download/v#{version}/DevCatz-#{version}-#{arch}.dmg"
   name "DevCatz"
   desc "Local development environment for sites, runtimes and databases"
   homepage "https://catzoid.com/devcatz"
