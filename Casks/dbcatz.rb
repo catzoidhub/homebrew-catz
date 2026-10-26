@@ -2,9 +2,9 @@ cask "dbcatz" do
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "0.1.0"
-  sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
-         intel: "0000000000000000000000000000000000000000000000000000000000000000"
+  version "1.0.0"
+  sha256 arm:   "e821e4827e67909e164eae3aa1db69bfadaf4039e2b27327054a7c202990528d",
+         intel: "e576dec9262d6c74e0288b7098711d266cbcef9ebdca791bf05afec8d1f6ca4a"
 
   url "https://github.com/catzoidhub/DBCatz/releases/download/v#{version}/DBCatz-#{version}-#{arch}.dmg",
       verified: "github.com/catzoidhub/DBCatz/"
