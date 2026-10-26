@@ -6,13 +6,16 @@ The litter's Homebrew tap. One `brew install` and a cat comes home.
 brew install --cask catzoidhub/catz/devcatz
 brew install --cask catzoidhub/catz/dbcatz
 brew install --cask catzoidhub/catz/dialcatz
+brew install --cask catzoidhub/catz/docatz    # coming soon
+brew install catzoidhub/catz/mcatzp           # coming soon — a formula, so no --cask
 ```
 
 Or tap once and use the short names:
 
 ```bash
 brew tap catzoidhub/catz
-brew install --cask devcatz dbcatz dialcatz
+brew install --cask devcatz dbcatz dialcatz docatz
+brew install mcatzp
 ```
 
 | Name | What it is |
