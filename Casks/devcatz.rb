@@ -18,7 +18,7 @@ cask "devcatz" do
 
   # the app updates itself (Check for Updates under Settings → About)
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "DevCatz.app"
 
