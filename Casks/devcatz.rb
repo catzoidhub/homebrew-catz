@@ -3,8 +3,8 @@ cask "devcatz" do
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
   version "1.0.0"
-  sha256 arm:   "4d57481c8d2c89161ad287d5bbb15773fb60c428f43d1324ebc31c0b70124b5a",
-         intel: "746942da7d38c9811a11aa723977941398c1ba4071fde8082e71b71d2a45328e"
+  sha256 arm:   "e41e776de14d6dbabc31972a3b182098e4321746558a537b8d59d555e0435e3e",
+         intel: "4d49135ab2b0a8606981679f684c6c2f9009c7440199dd6050a55e50195ef914"
 
   url "https://github.com/catzoidhub/DevCatz/releases/download/v#{version}/DevCatz-#{version}-#{arch}.dmg"
   name "DevCatz"
