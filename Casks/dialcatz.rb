@@ -3,8 +3,8 @@ cask "dialcatz" do
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
   version "1.0.0"
-  sha256 arm:   "181eb4c683a5989b7363d610e402ec77fb7b94cd07341f5ab1e531ccec6de353",
-         intel: "a586ef690e9ccef9ef752c246b8ef17dd2e411534191ea8848e54ac8633d98db"
+  sha256 arm:   "9e0950e4e290976b6d06489e5a3dfb9b87df5c6fb9f4391d04478f1e70975aed",
+         intel: "f389e32dda790b174e036335b7e1fde619c670c73a59aff8d350938f515f4018"
 
   url "https://github.com/catzoidhub/DialCatz/releases/download/v#{version}/DialCatz-#{version}-#{arch}.dmg"
   name "DialCatz"
