@@ -2,9 +2,9 @@ cask "dialcatz" do
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "1.0.0"
-  sha256 arm:   "31adc8ebd5d457fdbd166116347c573f11c8d0d14805ee367cfa3ae2b57fa0ff",
-         intel: "bb7e6376e627c56a3ed4e43502921aef235f1874d446d9cf59cb6e03d98c705d"
+  version "1.0.1"
+  sha256 arm:   "b4c9ff074e10a94de52485f9457fe8c3f3e3a49a30bb5bcdbbafae59817e0590",
+         intel: "261c385d397c97e765358d548b06a45fa12f2c8748e671bfb7df8e7d60e158f3"
 
   url "https://github.com/catzoidhub/DialCatz/releases/download/v#{version}/DialCatz-#{version}-#{arch}.dmg"
   name "DialCatz"
