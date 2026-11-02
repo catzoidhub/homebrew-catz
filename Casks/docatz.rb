@@ -1,13 +1,12 @@
 cask "docatz" do
-  # DoCatz is not released yet (2026-10-26): this cask waits for its first public release on catzoidhub/DoCatz.
-  # Its zap list follows DoCatz TODO #33 (what Uninstall DoCatz removes) — check it against the real app before
-  # the first push.
+  # DoCatz 1.0.0 is its first release (2026-11-03). Its zap list follows DoCatz TODO #33 (what Uninstall DoCatz
+  # removes).
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "0.1.0"
-  sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
-         intel: "0000000000000000000000000000000000000000000000000000000000000000"
+  version "1.0.0"
+  sha256 arm:   "247110f8bcafedad65ba9665301f6be544e7a2ebfcc44906eb273693998fa569",
+         intel: "68d3942b68b9035516c5fd743d4fd97c0237df2263017cd9c252f67b42f349d5"
 
   url "https://github.com/catzoidhub/DoCatz/releases/download/v#{version}/DoCatz-#{version}-#{arch}.dmg"
   name "DoCatz"
@@ -28,7 +27,7 @@ cask "docatz" do
   uninstall quit: "com.mrcatz.docatz"
 
   # what DoCatz → Settings → Uninstall DoCatz removes from your home folder (DoCatz TODO #33); the VM disk image
-  # lives in its data folder, bind-mounted project folders are never touched
+  # lives in ~/.docatz/vm, bind-mounted project folders are never touched
   zap trash: [
     "~/.docatz",
     "~/Library/Application Support/DoCatz",
