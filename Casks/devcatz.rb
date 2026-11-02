@@ -2,9 +2,9 @@ cask "devcatz" do
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "1.0.2"
-  sha256 arm:   "2160d31f57166591261deb80be2d7b6006eeebb061c8bc27ec1fa4ffd455b326",
-         intel: "eb6e6a3b4bb41b6e01cc8b9d0e6d2a4762911c57452edf0de67f07230285d5e4"
+  version "1.0.3"
+  sha256 arm:   "02cba379f82ae1a695bcfa02753ea3873ab030347c4cdd7f7ab45012b504ad1b",
+         intel: "eb2a2d04972f137ea846dafad03c1e68fc6d793bb553fca339b602aa2e36d7a4"
 
   url "https://github.com/catzoidhub/DevCatz/releases/download/v#{version}/DevCatz-#{version}-#{arch}.dmg"
   name "DevCatz"
