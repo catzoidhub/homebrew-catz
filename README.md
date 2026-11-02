@@ -16,7 +16,7 @@ After that, any cat by its short name:
 brew install --cask devcatz
 brew install --cask dbcatz
 brew install --cask dialcatz
-brew install --cask docatz      # coming soon
+brew install --cask docatz     
 brew install mcatzp             # coming soon — a formula, so no --cask
 ```
 
