@@ -4,9 +4,9 @@ cask "docatz" do
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "1.0.0"
-  sha256 arm:   "247110f8bcafedad65ba9665301f6be544e7a2ebfcc44906eb273693998fa569",
-         intel: "68d3942b68b9035516c5fd743d4fd97c0237df2263017cd9c252f67b42f349d5"
+  version "1.0.1"
+  sha256 arm:   "a6ff6a90dd067bf1533f30a0bb3ff7a4c23d92c8cebc2c79dc91eeca671c9a92",
+         intel: "bdcd6e4ffba3ebf743c4ddb8a29d4fe90f0769c9c0a6c24cd4d8dbe02a27fac8"
 
   url "https://github.com/catzoidhub/DoCatz/releases/download/v#{version}/DoCatz-#{version}-#{arch}.dmg"
   name "DoCatz"
