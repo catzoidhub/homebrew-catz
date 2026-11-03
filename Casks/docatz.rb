@@ -8,13 +8,15 @@ cask "docatz" do
   sha256 arm:   "a6ff6a90dd067bf1533f30a0bb3ff7a4c23d92c8cebc2c79dc91eeca671c9a92",
          intel: "bdcd6e4ffba3ebf743c4ddb8a29d4fe90f0769c9c0a6c24cd4d8dbe02a27fac8"
 
-  url "https://github.com/catzoidhub/DoCatz/releases/download/v#{version}/DoCatz-#{version}-#{arch}.dmg"
+  # through catzoid.com's counted redirect (Catzoid admin → Downloads → Homebrew): it answers with a 302 to this
+  # version's DMG on the GitHub release, and Homebrew checks the sha256 above on what it gets
+  url "https://catzoid.com/download/docatz/mac-#{arch}?v=#{version}"
   name "DoCatz"
   desc "Light container engine and desktop with a Linux VM"
   homepage "https://catzoid.com/docatz"
 
   livecheck do
-    url :url
+    url "https://github.com/catzoidhub/DoCatz"
     strategy :github_latest
   end
 

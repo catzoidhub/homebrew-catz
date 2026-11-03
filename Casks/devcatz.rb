@@ -6,13 +6,15 @@ cask "devcatz" do
   sha256 arm:   "a4a25393219a3d7a5d882d4f379ef84d1b8eee3bdac163649bc872e1a923503a",
          intel: "fba94aebf7af475fba4a418bddca1fcf61fa211ad5e29f75e8632f70d5676664"
 
-  url "https://github.com/catzoidhub/DevCatz/releases/download/v#{version}/DevCatz-#{version}-#{arch}.dmg"
+  # through catzoid.com's counted redirect (Catzoid admin → Downloads → Homebrew): it answers with a 302 to this
+  # version's DMG on the GitHub release, and Homebrew checks the sha256 above on what it gets
+  url "https://catzoid.com/download/devcatz/mac-#{arch}?v=#{version}"
   name "DevCatz"
   desc "Local development environment for sites, runtimes and databases"
   homepage "https://catzoid.com/devcatz"
 
   livecheck do
-    url :url
+    url "https://github.com/catzoidhub/DevCatz"
     strategy :github_latest
   end
 
