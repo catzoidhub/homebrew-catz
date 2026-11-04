@@ -3,8 +3,8 @@ cask "dbcatz" do
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
   version "1.1.0"
-  sha256 arm:   "e4cd00a90e0056d87ae43199edad7327d059b2d3e8d6541f1ceef1c8b4418ea3",
-         intel: "2df73d4dabf1b4615acb4c80d636b3c1844e751f33815dc15ace04230d6572c8"
+  sha256 arm:   "19036eb5081c2885dd0a3d8ea03303c2db508a9490795c19c7d3277729e3ee22",
+         intel: "7560a85951123f9dbce8484e79aa310a40e62b8f4a9fa299933d89c459a1c8b5"
 
   # through catzoid.com's counted redirect (Catzoid admin → Downloads → Homebrew): it answers with a 302 to this
   # version's DMG on the GitHub release, and Homebrew checks the sha256 above on what it gets
