@@ -3,7 +3,8 @@
 #   Casks/<app>.rb   (the apps) — reads the Apple silicon and Intel DMGs of v<version> from
 #                    github.com/catzoidhub/<App>/releases (they must exist and be public), writes the version and both
 #                    SHA-256 sums;
-#   Formula/<app>.rb (mcatzp)   — reads the npm tarball of <version>, writes its URL and SHA-256.
+#   Formula/<app>.rb (mcatzp)   — reads the Mac zips of v<version> from github.com/catzoidhub/MCatzP/releases,
+#                    writes the version and both SHA-256 sums.
 # Prints the diff. Commit and push after.
 set -euo pipefail
 
@@ -13,14 +14,27 @@ version="${version#v}"
 cd "$(dirname "$0")/.."
 cask="Casks/${app}.rb"
 
-# a formula (MCatzP, published on npm): the tarball's URL and SHA-256
+# a formula (MCatzP): the version and the sums of its two Mac zips on the GitHub release
 if [ -f "Formula/${app}.rb" ]; then
   formula="Formula/${app}.rb"
-  tgz="https://registry.npmjs.org/${app}/-/${app}-${version}.tgz"
-  tmp=$(mktemp)
-  curl -fsSL -o "$tmp" "$tgz" || { echo "not on npm: $tgz" >&2; rm -f "$tmp"; exit 1; }
-  sha=$(shasum -a 256 "$tmp" | cut -d' ' -f1); rm -f "$tmp"
-  /usr/bin/sed -i '' -e "s#^  url \".*\"#  url \"${tgz}\"#" -e "s/^  sha256 \".*\"/  sha256 \"${sha}\"/" "$formula"
+  base="https://github.com/catzoidhub/MCatzP/releases/download/v${version}"
+  zipsum() {
+    local file="${app}-${version}-$1.zip"
+    local tmp; tmp=$(mktemp)
+    if ! curl -fsSL -o "$tmp" "${base}/${file}"; then
+      echo "missing on the release: ${base}/${file}" >&2
+      rm -f "$tmp"; exit 1
+    fi
+    shasum -a 256 "$tmp" | cut -d' ' -f1
+    rm -f "$tmp"
+  }
+  arm=$(zipsum mac-arm64)
+  intel=$(zipsum mac-x64)
+  /usr/bin/sed -i '' \
+    -e "s/^  version \".*\"/  version \"${version}\"/" \
+    -e "/on_arm do/,/end/ s/sha256 \".*\"/sha256 \"${arm}\"/" \
+    -e "/on_intel do/,/end/ s/sha256 \".*\"/sha256 \"${intel}\"/" \
+    "$formula"
   git --no-pager diff -- "$formula"
   echo "Checked: brew audit --formula --online catzoidhub/catz/${app}"
   exit 0
