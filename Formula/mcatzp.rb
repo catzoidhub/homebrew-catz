@@ -9,11 +9,11 @@ class Mcatzp < Formula
 
   on_arm do
     url "https://catzoid.com/download/mcatzp/mac-arm64?v=#{version}"
-    sha256 "23ee4ffdd43d2fa25017908008182662ac7995797ec78cad2836028eefd0f899"
+    sha256 "828d2668d08ad851a3f814705dc9311ef4e064c0597f53ae23583c1649e48c76"
   end
   on_intel do
     url "https://catzoid.com/download/mcatzp/mac-x64?v=#{version}"
-    sha256 "9f863cc18ba23e2b4735f4ab369be14cffd059045a63b0e0e6fdd4806eece8c3"
+    sha256 "c4481f3994dc7c0b9ee0c008ad00fd11d8f4c2a615464e19cbe430b61eacc322"
   end
 
   livecheck do
