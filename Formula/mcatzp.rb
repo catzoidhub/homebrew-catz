@@ -1,19 +1,19 @@
 class Mcatzp < Formula
-  # MCatzP is not released yet: this formula waits for its first release (MCatzP TODO #19, #21). A command-line MCP
-  # server, so a formula, not a cask: the signed, notarized binary for this Mac, no Node needed. It downloads through
-  # catzoid.com's counted redirect like the casks (Catzoid #86, #87); scripts/bump.sh fills in the version and sums.
+  # A command-line MCP server, so a formula, not a cask: the signed, notarized binary for this Mac, no Node needed. It
+  # downloads through catzoid.com's counted redirect like the casks (Catzoid #86, #87); scripts/bump.sh fills in the
+  # version and sums.
   desc "MCP server that lets AI assistants use the Catzoid apps"
   homepage "https://catzoid.com/mcatzp"
-  version "0.1.0"
+  version "1.0.0"
   license "Apache-2.0"
 
   on_arm do
     url "https://catzoid.com/download/mcatzp/mac-arm64?v=#{version}"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "23ee4ffdd43d2fa25017908008182662ac7995797ec78cad2836028eefd0f899"
   end
   on_intel do
     url "https://catzoid.com/download/mcatzp/mac-x64?v=#{version}"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "9f863cc18ba23e2b4735f4ab369be14cffd059045a63b0e0e6fdd4806eece8c3"
   end
 
   livecheck do
