@@ -17,7 +17,7 @@ brew install --cask devcatz
 brew install --cask dbcatz
 brew install --cask dialcatz
 brew install --cask docatz
-brew install mcatzp             # coming soon — a formula, so no --cask
+brew install mcatzp             # a formula, so no --cask
 ```
 
 | Name | What it is |
@@ -26,7 +26,7 @@ brew install mcatzp             # coming soon — a formula, so no --cask
 | [`dbcatz`](https://catzoid.com/dbcatz) | *Curiosity won't kill this cat.* One window for MySQL, MariaDB, PostgreSQL, SQLite, Redis, Valkey, MongoDB and Elasticsearch. |
 | [`dialcatz`](https://catzoid.com/dialcatz) | *Dial an endpoint. Hear it purr.* An API client for REST, GraphQL and WebSocket, with a self-hosted team server. |
 | [`docatz`](https://catzoid.com/docatz) | *If it fits, it ships.* A fast, light Docker engine and container manager: a small Linux VM runs Docker, containers grouped by compose project, every container on its own `https://*.docatz.localhost` name. |
-| [`mcatzp`](https://catzoid.com/mcatzp) (formula) | *The MCP with the cats inside.* One MCP server for your AI assistant to reach every cat. *Coming soon.* Install with `brew install catzoidhub/catz/mcatzp` (no `--cask`). |
+| [`mcatzp`](https://catzoid.com/mcatzp) (formula) | *The MCP with the cats inside.* One MCP server for your AI assistant to reach every cat, from their 1.1.0. Install with `brew install catzoidhub/catz/mcatzp` (no `--cask`). |
 
 Every cat is notarized by Apple, runs on macOS 13 or later (Apple silicon and Intel), and **updates itself** — Homebrew
 only puts it in place the first time. All cats, no catch: free and open source, no account.
@@ -45,8 +45,8 @@ item before it touches anything — see [catzoid.com/docs/uninstall](https://cat
 ## For maintainers
 
 `scripts/bump.sh <app> <version>` reads the Apple silicon and Intel DMGs of that release on GitHub and writes the
-version and both SHA-256 sums into `Casks/<app>.rb` — or, for MCatzP, the npm tarball's URL and SHA-256 into
-`Formula/mcatzp.rb` — and prints the diff. `mcatzp` waits for its first release. Commit and push; `brew update` picks it up.
+version and both SHA-256 sums into `Casks/<app>.rb` — or, for MCatzP, the version and the SHA-256 sums of its two Mac zips into
+`Formula/mcatzp.rb` — and prints the diff. Commit and push; `brew update` picks it up.
 
 The casks and formula are MIT-licensed; the apps themselves are GPL-3.0 and MCatzP Apache-2.0 — see each repository on
 [github.com/catzoidhub](https://github.com/catzoidhub).
