@@ -4,9 +4,9 @@ cask "docatz" do
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "1.1.0"
-  sha256 arm:   "d4f7bef79fe98254cbbc0b63910842389fefe901b1f5aff89330d2b5f9fa212f",
-         intel: "6e345fdeb050e187d20eb77b0563d1e4c79b850a63ea48c6252f4c3bfe106d7e"
+  version "1.2.1"
+  sha256 arm:   "5719f122e0c297079ec175f898d1080b2e3f2142a73df83b99fa8be3116bf817",
+         intel: "df14c7ed7ab070a95ca6c920bdc950613ef8b8706c2d87e3f8acb2576a4e74b5"
 
   # through catzoid.com's counted redirect (Catzoid admin → Downloads → Homebrew): it answers with a 302 to this
   # version's DMG on the GitHub release, and Homebrew checks the sha256 above on what it gets
