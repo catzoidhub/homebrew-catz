@@ -2,9 +2,9 @@ cask "dialcatz" do
   arch arm: "arm64", intel: "x64"
 
   # filled in by scripts/bump.sh from the release on GitHub (Apple silicon and Intel DMGs)
-  version "1.1.0"
-  sha256 arm:   "d6ab4ce61ed9e0d19233ec807f6089c992de366825b2e37789191a8f4794b338",
-         intel: "2adb989d9df68e1531860f823e7bff400db4ae8987472bce0bc2eeb681f380ce"
+  version "1.2.1"
+  sha256 arm:   "6710e5da30184eb91cb9b467946642356fbca42f4e93e6ec90b78d7553dd0d30",
+         intel: "86cbc06ca1efbf1c03768fdebb477678d127ab4c9e1aab52c9f14e34a5b1cc2d"
 
   # through catzoid.com's counted redirect (Catzoid admin → Downloads → Homebrew): it answers with a 302 to this
   # version's DMG on the GitHub release, and Homebrew checks the sha256 above on what it gets
