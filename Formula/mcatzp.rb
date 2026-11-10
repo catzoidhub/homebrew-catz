@@ -4,16 +4,16 @@ class Mcatzp < Formula
   # version and sums.
   desc "MCP server that lets AI assistants use the Catzoid apps"
   homepage "https://catzoid.com/mcatzp"
-  version "1.0.4"
+  version "1.0.5"
   license "Apache-2.0"
 
   on_arm do
     url "https://catzoid.com/download/mcatzp/mac-arm64?v=#{version}"
-    sha256 "6ef7e052502a38dde0b95088192253aecc33fa081ce3bafb708fa520ac7c5efe"
+    sha256 "625ebd2361f270ab537bba72c678be6427552109ab6e81ab16551aebcf8d8879"
   end
   on_intel do
     url "https://catzoid.com/download/mcatzp/mac-x64?v=#{version}"
-    sha256 "d05c31787d514c25f39f41b84d7d98c680c2c9ded0caf4498a726934d67cec09"
+    sha256 "5a94ab8584d3ef2ff585eb27b519aeb8ac6b7420f25b7878e448a56cfad34317"
   end
 
   livecheck do
