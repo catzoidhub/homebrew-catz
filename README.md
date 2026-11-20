@@ -23,13 +23,16 @@ brew install mcatzp             # a formula, so no --cask
 | Name | What it is |
 | --- | --- |
 | [`devcatz`](https://catzoid.com/devcatz) | *Finally, someone herds the cats.* A local development environment: every site on its own `https://*.localhost`, with every runtime, database, mail, search, tunnel and Docker in one app. |
-| [`dbcatz`](https://catzoid.com/dbcatz) | *Curiosity won't kill this cat.* One window for MySQL, MariaDB, PostgreSQL, SQLite, Redis, Valkey, MongoDB and Elasticsearch. |
-| [`dialcatz`](https://catzoid.com/dialcatz) | *Dial an endpoint. Hear it purr.* An API client for REST, GraphQL and WebSocket, with a self-hosted team server. |
-| [`docatz`](https://catzoid.com/docatz) | *If it fits, it ships.* A fast, light Docker engine and container manager: a small Linux VM runs Docker, containers grouped by compose project, every container on its own `https://*.docatz.localhost` name. |
-| [`mcatzp`](https://catzoid.com/mcatzp) (formula) | *The MCP with the cats inside.* One MCP server for your AI assistant to reach every cat, from their 1.1.0. Install with `brew install catzoidhub/catz/mcatzp` (no `--cask`). |
+| [`dbcatz`](https://catzoid.com/dbcatz) | *Curiosity won't kill this cat.* One window for MySQL, MariaDB, PostgreSQL, SQLite, Redis, Valkey, MongoDB and Elasticsearch, with SSH, AWS IAM and Vault connections and production safety built in. |
+| [`dialcatz`](https://catzoid.com/dialcatz) | *Dial an endpoint. Hear it purr.* An API and protocol client: HTTP, GraphQL, WebSocket, Socket.IO, Pusher, gRPC, Server-Sent Events and JSON-RPC, collections that follow their OpenAPI spec, a mock server, shared through Git or a self-hosted team server. |
+| [`docatz`](https://catzoid.com/docatz) | *If it fits, it ships.* A fast, light Docker engine and desktop: a small Linux VM or the Lite engine that sleeps when idle, containers grouped by compose project, every container on its own `https://*.docatz.localhost` name, Kubernetes in one click. |
+| [`mcatzp`](https://catzoid.com/mcatzp) (formula) | *The MCP with the cats inside.* One MCP server for your AI assistant to reach every cat (573 tools), from their 1.1.0. Install with `brew install catzoidhub/catz/mcatzp` (no `--cask`). |
 
 Every cat is notarized by Apple, runs on macOS 13 or later (Apple silicon and Intel), and **updates itself** — Homebrew
 only puts it in place the first time. All cats, no catch: free and open source, no account.
+
+This tap is for macOS. The cats run on Windows and Linux too: get those builds from
+[catzoid.com/download](https://catzoid.com/download), and MCatzP anywhere with `npx -y mcatzp`.
 
 ## Uninstall
 
